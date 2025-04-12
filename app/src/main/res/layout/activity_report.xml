@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Report">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relatório Nutricional"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:typeface="serif"
+        android:textStyle="italic"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/nameDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nameText"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_toRightOf="@+id/nameText"
+        android:inputType="none"></EditText>
+
+    <TextView
+        android:id="@+id/ageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Idade:"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/ageDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ageText"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_toRightOf="@+id/ageText"
+        android:inputType="none"></EditText>
+
+    <TextView
+        android:id="@+id/weightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peso:"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/weightDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/weightText"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_toRightOf="@+id/weightText"
+        android:inputType="none"></EditText>
+
+    <TextView
+        android:id="@+id/heightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Altura:"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/heightDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/heightText"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_toRightOf="@+id/heightText"
+        android:inputType="none"></EditText>
+
+    <TextView
+        android:id="@+id/imcText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMC:"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/imcDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imcText"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_toRightOf="@+id/imcText"
+        android:inputType="none"></EditText>
+
+    <TextView
+        android:id="@+id/classificationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Classificação:"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/classificationDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/classificationText"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_toRightOf="@+id/classificationText"
+        android:inputType="none"></EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Realizar Novo Cálculo"
+        android:layout_marginTop="500dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
+        ></Button>
+
+
+</RelativeLayout>
